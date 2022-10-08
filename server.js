@@ -19,9 +19,9 @@ const buytasks = require('./buytaskmodel')
 dotenv.config({ path: './config.env' });
 const URI = process.env.URI;
 
-
-
-app.use(cors({ credentials: true, origin: 'http://35.78.65.206:3000' }));
+// http://35.78.65.206:3000
+// https://heartfelt-starship-abfbb2.netlify.app/
+app.use(cors({ credentials: true, origin: 'https://heartfelt-starship-abfbb2.netlify.app/' }));
 app.use(express.json());
 
 const PORT =8000 || process.env.PORT
