@@ -23,7 +23,7 @@ const URI = process.env.URI;
 // https://heartfelt-starship-abfbb2.netlify.app/
 // https://zepverse.org/
 
-app.use(cors({ credentials: true, origin: 'https://zepverse.org/' }));
+app.use(cors({ origin: ['https://zepverse.org','https://main.d1jezzyvpan5br.amplifyapp.com']} ));
 app.use(express.json());
 
 const PORT = 80 || process.env.PORT
